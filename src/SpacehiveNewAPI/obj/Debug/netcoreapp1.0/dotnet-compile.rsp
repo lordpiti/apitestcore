@@ -1,5 +1,5 @@
---temp-output:c:\users\pablo\documents\visual studio 2015\Projects\SpacehiveNewAPI\src\SpacehiveNewAPI\obj\Debug\netcoreapp1.0\
---out:c:\users\pablo\documents\visual studio 2015\Projects\SpacehiveNewAPI\src\SpacehiveNewAPI\bin\Debug\netcoreapp1.0\SpacehiveNewAPI.dll
+--temp-output:D:\Repos\apitestcore\src\SpacehiveNewAPI\obj\Debug\netcoreapp1.0\
+--out:D:\Repos\apitestcore\src\SpacehiveNewAPI\bin\Debug\netcoreapp1.0\SpacehiveNewAPI.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -140,7 +140,7 @@
 --reference:C:\Users\pablo\.nuget\packages\System.Reflection.TypeExtensions\4.1.0\ref\netstandard1.5\System.Reflection.TypeExtensions.dll
 --reference:C:\Users\pablo\.nuget\packages\System.Resources.Reader\4.0.0\lib\netstandard1.0\System.Resources.Reader.dll
 --reference:C:\Users\pablo\.nuget\packages\System.Resources.ResourceManager\4.0.1\ref\netstandard1.0\System.Resources.ResourceManager.dll
---reference:C:\Users\pablo\.nuget\packages\System.Runtime\4.1.0\ref\netstandard1.5\System.Runtime.dll
+--reference:C:\Users\pablo\.nuget\packages\System.Runtime\4.3.0\ref\netstandard1.5\System.Runtime.dll
 --reference:C:\Users\pablo\.nuget\packages\System.Runtime.Extensions\4.1.0\ref\netstandard1.5\System.Runtime.Extensions.dll
 --reference:C:\Users\pablo\.nuget\packages\System.Runtime.Handles\4.0.1\ref\netstandard1.3\System.Runtime.Handles.dll
 --reference:C:\Users\pablo\.nuget\packages\System.Runtime.InteropServices\4.1.0\ref\netstandard1.5\System.Runtime.InteropServices.dll
@@ -166,10 +166,10 @@
 --reference:C:\Users\pablo\.nuget\packages\System.Threading.Tasks.Parallel\4.0.1\ref\netstandard1.1\System.Threading.Tasks.Parallel.dll
 --reference:C:\Users\pablo\.nuget\packages\System.Threading.Thread\4.0.0\ref\netstandard1.3\System.Threading.Thread.dll
 --reference:C:\Users\pablo\.nuget\packages\System.Threading.ThreadPool\4.0.10\ref\netstandard1.3\System.Threading.ThreadPool.dll
---reference:C:\Users\pablo\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
+--reference:C:\Users\pablo\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\pablo\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\pablo\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"c:\users\pablo\documents\visual studio 2015\Projects\SpacehiveNewAPI\src\SpacehiveNewAPI\obj\Debug\netcoreapp1.0\SpacehiveNewAPIdotnet-compile.deps.json",SpacehiveNewAPI.deps.json
-c:\users\pablo\documents\visual studio 2015\Projects\SpacehiveNewAPI\src\SpacehiveNewAPI\Program.cs
-c:\users\pablo\documents\visual studio 2015\Projects\SpacehiveNewAPI\src\SpacehiveNewAPI\Startup.cs
-c:\users\pablo\documents\visual studio 2015\Projects\SpacehiveNewAPI\src\SpacehiveNewAPI\Controllers\ValuesController.cs
+--resource:"D:\Repos\apitestcore\src\SpacehiveNewAPI\obj\Debug\netcoreapp1.0\SpacehiveNewAPIdotnet-compile.deps.json",SpacehiveNewAPI.deps.json
+D:\Repos\apitestcore\src\SpacehiveNewAPI\Program.cs
+D:\Repos\apitestcore\src\SpacehiveNewAPI\Startup.cs
+D:\Repos\apitestcore\src\SpacehiveNewAPI\Controllers\ValuesController.cs

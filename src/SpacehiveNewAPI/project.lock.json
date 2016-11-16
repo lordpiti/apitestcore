@@ -1334,7 +1334,7 @@
       "Microsoft.NETCore.Jit/1.0.4": {
         "type": "package"
       },
-      "Microsoft.NETCore.Platforms/1.0.1": {
+      "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -1350,7 +1350,7 @@
           "Microsoft.NETCore.Windows.ApiSets": "1.0.1"
         }
       },
-      "Microsoft.NETCore.Targets/1.0.1": {
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -2713,11 +2713,11 @@
           "lib/portable-net45+win8+wp8+wpa81/_._": {}
         }
       },
-      "System.Runtime/4.1.0": {
+      "System.Runtime/4.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.NETCore.Targets": "1.0.1"
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.dll": {}
@@ -3332,12 +3332,12 @@
           "lib/netstandard1.3/System.Threading.ThreadPool.dll": {}
         }
       },
-      "System.Threading.Timer/4.0.1": {
+      "System.Threading.Timer/4.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.NETCore.Targets": "1.0.1",
-          "System.Runtime": "4.1.0"
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
         },
         "compile": {
           "ref/netstandard1.2/System.Threading.Timer.dll": {}
@@ -4482,12 +4482,12 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Platforms/1.0.1": {
-      "sha512": "2G6OjjJzwBfNOO8myRV/nFrbTw5iA+DEm0N+qUqhrOmaVtn4pC77h38I1jsXGw5VH55+dPfQsqHD0We9sCl9FQ==",
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
-      "path": "Microsoft.NETCore.Platforms/1.0.1",
+      "path": "Microsoft.NETCore.Platforms/1.1.0",
       "files": [
-        "Microsoft.NETCore.Platforms.1.0.1.nupkg.sha512",
+        "Microsoft.NETCore.Platforms.1.1.0.nupkg.sha512",
         "Microsoft.NETCore.Platforms.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -4507,12 +4507,12 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Targets/1.0.1": {
-      "sha512": "rkn+fKobF/cbWfnnfBOQHKVKIOpxMZBvlSHkqDWgBpwGDcLRduvs3D9OLGeV6GWGvVwNlVi2CBbTjuPmtHvyNw==",
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "type": "package",
-      "path": "Microsoft.NETCore.Targets/1.0.1",
+      "path": "Microsoft.NETCore.Targets/1.1.0",
       "files": [
-        "Microsoft.NETCore.Targets.1.0.1.nupkg.sha512",
+        "Microsoft.NETCore.Targets.1.1.0.nupkg.sha512",
         "Microsoft.NETCore.Targets.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -7541,12 +7541,12 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "System.Runtime/4.1.0": {
-      "sha512": "v6c/4Yaa9uWsq+JMhnOFewrYkgdNHNG2eMKuNqRn8P733rNXeRCGvV5FkkjBXn2dbVkPXOsO0xjsEeM1q2zC0g==",
+    "System.Runtime/4.3.0": {
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "type": "package",
-      "path": "System.Runtime/4.1.0",
+      "path": "System.Runtime/4.3.0",
       "files": [
-        "System.Runtime.4.1.0.nupkg.sha512",
+        "System.Runtime.4.3.0.nupkg.sha512",
         "System.Runtime.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -8952,12 +8952,12 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "System.Threading.Timer/4.0.1": {
-      "sha512": "saGfUV8uqVW6LeURiqxcGhZ24PzuRNaUBtbhVeuUAvky1naH395A/1nY0P2bWvrw/BreRtIB/EzTDkGBpqCwEw==",
+    "System.Threading.Timer/4.3.0": {
+      "sha512": "Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
       "type": "package",
-      "path": "System.Threading.Timer/4.0.1",
+      "path": "System.Threading.Timer/4.3.0",
       "files": [
-        "System.Threading.Timer.4.0.1.nupkg.sha512",
+        "System.Threading.Timer.4.3.0.nupkg.sha512",
         "System.Threading.Timer.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -9267,7 +9267,8 @@
       "Microsoft.Extensions.Logging.Debug >= 1.0.0",
       "Microsoft.Extensions.Options.ConfigurationExtensions >= 1.0.0",
       "Microsoft.NETCore.App >= 1.0.1",
-      "RabbitMQ.Client >= 4.1.1"
+      "RabbitMQ.Client >= 4.1.1",
+      "System.Threading.Timer >= 4.3.0"
     ],
     ".NETCoreApp,Version=v1.0": []
   },

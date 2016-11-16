@@ -18,7 +18,7 @@ namespace SpacehiveNewAPI
         public static void Main(string[] args)
         {
             //// Start a thread that calls a parameterized static method.
-            Thread newThread = new Thread(DoWork);
+            Thread newThread = new Thread(Start); 
             newThread.Start(42);
 
             var host = new WebHostBuilder()
@@ -33,14 +33,13 @@ namespace SpacehiveNewAPI
 
         public static void DoWork(object data)
         { 
-            while (true) 
-            {
-                var apiUrl = "http://mockbin.org/bin/ae62c972-ef92-4136-9291-b4b972b86698?foo=bar&foo=baz";
+
+                var apiUrl = "http://mockbin.org/bin/30c84903-e7f2-4c7e-815a-e5bcc5cb687a?foo=bar&foo=baz";
                 HttpClient client = new HttpClient();
 
                 var task = Task.Run(() => client.GetAsync(apiUrl));
                 var aa = task.Result;
-            }
+
 
             //SendMessage("Pablo knows");
             //SendMessage("Manny doesn't know");
@@ -95,6 +94,17 @@ namespace SpacehiveNewAPI
                                      noAck: true, consumer: consumer);
             }
         }
-    
+
+        static void Start(object data)
+        {
+
+            var autoEvent = new AutoResetEvent(false);
+
+            var stateTimer = new Timer(DoWork,
+                                               autoEvent, 1000, 5000);
+
+        }
+
+
     }
 }
