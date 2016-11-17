@@ -20,24 +20,30 @@ namespace Spacehive.NewDataAccess.Concrete
 
         }
 
-        public List<string> MongoDbAccessTest()
+        public List<object> MongoDbAccessTest()
         {
 
             IMongoCollection<BsonDocument> collection = _mongoDb.GetCollection<BsonDocument>("books"); // initialize to the collection to read from
 
-            var lista = new List<string>();
+            var lista = new List<object>();
 
-            var cursor = collection.Find(new BsonDocument()).ToCursor();
+
+            var cursor = collection.Find(new BsonDocument());//.ToCursor();
             foreach (var document in cursor.ToEnumerable())
             {
-                using (var stringWriter = new StringWriter())
-                using (var jsonWriter = new JsonWriter(stringWriter))
-                {
-                    var context = BsonSerializationContext.CreateRoot(jsonWriter);
-                    collection.DocumentSerializer.Serialize(context, document);
-                    var line = stringWriter.ToString();
-                    lista.Add(line);
-                }
+                var bu = BsonSerializer.Deserialize<object>(document);
+
+                lista.Add(bu);
+
+                //using (var stringWriter = new StringWriter())
+                //using (var jsonWriter = new JsonWriter(stringWriter))
+                //{
+                //    var context = BsonSerializationContext.CreateRoot(jsonWriter);
+                //    collection.DocumentSerializer.Serialize(context, document);
+                //    var line = stringWriter.ToString();
+
+                //    lista.Add(line);
+                //}
             }
             return lista;
         }

@@ -7,7 +7,7 @@ namespace Spacehive.NewServices.Interfaces
 {
     public interface INewSurveyService
     {
-        List<string> MongoDbAccessTest();
+        List<object> MongoDbAccessTest();
 
         void MongoDbInsert();
     }

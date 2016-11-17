@@ -7,7 +7,7 @@ namespace Spacehive.NewDataAccess.Interfaces
 {
     public interface IMongoDbRepository
     {
-        List<string> MongoDbAccessTest();
+        List<object> MongoDbAccessTest();
 
         void MongoDbInsert();
     }

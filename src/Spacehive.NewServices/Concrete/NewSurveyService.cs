@@ -16,7 +16,7 @@ namespace Spacehive.NewServices.Concrete
             _mongoRepository = mongoRepository;
         }
 
-        public List<string> MongoDbAccessTest()
+        public List<object> MongoDbAccessTest()
         {
             return _mongoRepository.MongoDbAccessTest();
         }
