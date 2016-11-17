@@ -7,6 +7,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Spacehive.NewDataAccess.Interfaces;
+using Spacehive.NewDataAccess.Concrete;
+using Spacehive.NewServices.Interfaces;
+using Spacehive.NewServices.Concrete;
+using Spacehive.NewCrossCutting;
 
 namespace SpacehiveNewAPI
 {
@@ -29,6 +34,22 @@ namespace SpacehiveNewAPI
         {
             // Add framework services.
             services.AddMvc();
+
+            // Setup options with DI
+            services.AddOptions();
+
+            // Configure MySubOptions using a sub-section of the appsettings.json file
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+
+            #region Mongodb DI
+
+            services.AddScoped<IMongoDbRepository, MongoDbRepository>();
+            services.AddScoped<INewSurveyService, NewSurveyService>();
+
+            #endregion
+
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,1 +1,5 @@
 #:D:\Repos\apitestcore\src\SpacehiveNewAPI\SpacehiveNewAPI.xproj
+D:\Repos\apitestcore\src\SpacehiveNewAPI\SpacehiveNewAPI.xproj|D:\Repos\apitestcore\src\Spacehive.NewCrossCutting\Spacehive.NewCrossCutting.xproj
+D:\Repos\apitestcore\src\SpacehiveNewAPI\SpacehiveNewAPI.xproj|D:\Repos\apitestcore\src\Spacehive.NewServices\Spacehive.NewServices.xproj
+D:\Repos\apitestcore\src\Spacehive.NewServices\Spacehive.NewServices.xproj|D:\Repos\apitestcore\src\Spacehive.NewDataAccess\Spacehive.NewDataAccess.xproj
+D:\Repos\apitestcore\src\Spacehive.NewDataAccess\Spacehive.NewDataAccess.xproj|D:\Repos\apitestcore\src\Spacehive.NewCrossCutting\Spacehive.NewCrossCutting.xproj

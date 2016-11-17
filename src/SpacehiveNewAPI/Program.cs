@@ -10,6 +10,7 @@ using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Net.Http;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace SpacehiveNewAPI
 {
@@ -18,8 +19,8 @@ namespace SpacehiveNewAPI
         public static void Main(string[] args)
         {
             //// Start a thread that calls a parameterized static method.
-            Thread newThread = new Thread(Start); 
-            newThread.Start(42);
+            //Thread newThread = new Thread(Start); 
+            //newThread.Start(42);
 
             var host = new WebHostBuilder()
                 .UseKestrel()
@@ -32,14 +33,18 @@ namespace SpacehiveNewAPI
         }
 
         public static void DoWork(object data)
-        { 
+        {
+            #region external API call test
 
-                var apiUrl = "http://mockbin.org/bin/30c84903-e7f2-4c7e-815a-e5bcc5cb687a?foo=bar&foo=baz";
+            var apiUrl = "http://mockbin.org/bin/30c84903-e7f2-4c7e-815a-e5bcc5cb687a?foo=bar&foo=baz";
                 HttpClient client = new HttpClient();
 
                 var task = Task.Run(() => client.GetAsync(apiUrl));
                 var aa = task.Result;
 
+            #endregion
+
+            #region Rabbit MQ test
 
             //SendMessage("Pablo knows");
             //SendMessage("Manny doesn't know");
@@ -49,8 +54,33 @@ namespace SpacehiveNewAPI
             //    GetMessages();
             //}
 
+            #endregion
+
+            #region DI test
+
+            //var serviceProvider = new ServiceCollection()
+            //.AddSingleton<IMongoDbRepository, MongoDbRepository>()
+            //.BuildServiceProvider();
+
+
+            //// now you can resolve services
+            //var mongoRepo = serviceProvider.GetRequiredService<IMongoDbRepository>();
+
+            #endregion
 
         }
+
+        static void Start(object data)
+        {
+
+            var autoEvent = new AutoResetEvent(false);
+
+            var stateTimer = new Timer(DoWork,
+                                               autoEvent, 1000, 5000);
+
+        }
+
+        #region RabbitMQ testing
 
         public static void SendMessage(string message)
         {
@@ -95,16 +125,7 @@ namespace SpacehiveNewAPI
             }
         }
 
-        static void Start(object data)
-        {
-
-            var autoEvent = new AutoResetEvent(false);
-
-            var stateTimer = new Timer(DoWork,
-                                               autoEvent, 1000, 5000);
-
-        }
-
+        #endregion
 
     }
 }

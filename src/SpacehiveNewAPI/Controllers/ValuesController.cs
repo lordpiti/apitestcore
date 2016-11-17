@@ -3,17 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Spacehive.NewServices.Concrete;
+using Spacehive.NewServices.Interfaces;
 
 namespace SpacehiveNewAPI.Controllers
 {
+
+
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        private readonly INewSurveyService _newSurveyService;
+
+        public ValuesController(INewSurveyService newSurveyService)
+        {
+            _newSurveyService = newSurveyService;
+        }
+
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _newSurveyService.MongoDbAccessTest();
         }
 
         // GET api/values/5

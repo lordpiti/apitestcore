@@ -16,7 +16,9 @@
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
     "RabbitMQ.Client": "4.1.1",
-    "System.Threading.Timer": "4.3.0"
+    "System.Threading.Timer": "4.3.0",
+    "Spacehive.NewCrossCutting": "1.0.0-*",
+    "Spacehive.NewServices": "1.0.0-*"
   },
 
   "tools": {
